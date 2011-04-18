@@ -1,7 +1,7 @@
 Transaction Binding
 =============
 
-In my travels across the [Alfresco](www.alfresco.com) landscape, I
+In my travels across the [Alfresco](http://www.alfresco.com) landscape, I
 came across a nice piece of functionality buried deep inside some
 of the core transaction handling API's.  It provides the ability to
 bind an arbitrary object to the currently running transaction and
