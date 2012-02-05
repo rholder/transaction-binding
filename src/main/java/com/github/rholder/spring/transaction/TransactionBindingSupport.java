@@ -248,16 +248,16 @@ public abstract class TransactionBindingSupport
     }
     
     /**
-     * Method that registers a <tt>LuceneIndexerAndSearcherFactory</tt> against
-     * the transaction.
+     * Method that registers a <tt>TransactionListener</tt> against the
+     * transaction.
      * <p>
      * Setting this will ensure that the pre- and post-commit operations perform
-     * the necessary cleanups against the <tt>LuceneIndexerAndSearcherFactory</tt>.
+     * the necessary cleanups using the listener.
      * <p>
      * Although bound within a <tt>Set</tt>, it would still be better for the caller
      * to only bind once per transaction, if possible.
      * 
-     * @param indexerAndSearcher the Lucene indexer to perform transaction completion
+     * @param listener the TransactionListener to perform transaction completion
      *      tasks on
      */
     public static void bindListener(TransactionListener listener)
